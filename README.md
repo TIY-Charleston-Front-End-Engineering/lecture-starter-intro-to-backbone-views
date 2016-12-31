@@ -1,4 +1,4 @@
-#TIY Full Stack
+#simple-fullstack
 
 ##Getting started
 

@@ -1,8 +1,4 @@
-
-
-if (!global.PROJECT_NAME) { //« set by npm run init-dev »
-	throw new Error('no project name set. did you forget to run "npm run init-dev"?')
-}
+global.PROJECT_NAME = 'billys-pawnshop'
 // x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x..x
 
 
@@ -34,7 +30,7 @@ app.set('port', PORT)
 // =========
 // VIEW ENGINE
 // =========
-app.set('views', './public');
+app.set('views', './dist');
 app.engine('html', renderFile)
 app.set('view engine', 'html');
 
@@ -46,7 +42,7 @@ connectToDB(global.PROJECT_NAME)
 // =========
 // APPLICATION MIDDLEWARE
 // =========
-app.use( express.static( __dirname + '/public/assets') );
+app.use( express.static( __dirname + '/dist/assets') );
 app.use( bodyParser.json() );
 app.use( bodyParser.urlencoded({extended: true}) );
 app.use( appMiddleWare.parseQuery )

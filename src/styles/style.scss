@@ -3,8 +3,36 @@
 	box-sizing: border-box;
 }
 
-h1 {
-	font-size: 300px;
-	text-align: center;
-	color: fuchsia;
+img{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.pawnstar{
+	background: #36D7B7;
+}
+
+.shop-by-cat{
+	h2 {
+		padding-bottom: 20px;
+	}
+	background: #ddd;
+}
+
+.more-cats{
+	padding: 20px;
+}
+
+.category{
+	background: #F9BF3B;
+	padding: 20px;
+}
+
+.category img{
+	width: 40px;
+}
+
+.img-preview img{
+	width: 250px;
 }
